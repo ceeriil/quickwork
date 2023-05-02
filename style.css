@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #59219e;
+  --secondary-color: #fa9c29;
+  --bg-color: #ccbde3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+  overflow-x: hidden;
+  font-family: "Lexend", sans-serif;
+  color: #111;
+  line-height: 1.5;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.footer-banner {
+  background-color: var(--bg-color);
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner-text h2 {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: calc(2vw + 10px);
+}
+
+.banner-text h2 > span {
+  color: #fff;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.form-input,
+.form-text-area {
+  padding: 1rem 0.5rem;
+  border: none;
+  font-family: inherit;
+  width: 100%;
+}
+
+.form-input:first-child {
+  margin-bottom: 1rem;
+}
+
+.form-text-area {
+  min-height: 6rem;
+  height: 100%;
+  resize: none;
+}
+
+.form-input::placeholder {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.form-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.checkbox input[checkbox] {
+  border: none;
+}
+
+.checkbox span {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.submit-btn {
+  background: var(--secondary-color);
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+
+@media (max-width: 960px) {
+  .form-bottom,
+  .form-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-banner {
+    grid-template-columns: 1fr;
+  }
+}
